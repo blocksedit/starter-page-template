@@ -30,6 +30,12 @@ details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 
 /* Global */
 
+@font-face {
+  font-family: "Playfair Display";
+  font-weight: 300;
+  src: url("PlayfairDisplay-Regular.ttf") format("truetype");
+}
+
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -40,10 +46,45 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 20px;
   font-weight: 300;
-  line-height: .8em;
+  line-height: 1.2em;
+  text-align: center;
   cursor: default;
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
+}
+
+a {
+  color: #1467ac;
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-bottom: 15px;
+  font-family: "Playfair Display", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1em;
+}
+h1 {
+  font-size: 60px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 28px;
+}
+p {
+  margin-bottom: 15px;
+}
+
+/* Main container */
+
+.container {
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  width: 960px;
+  text-align: left;
 }
