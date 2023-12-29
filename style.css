@@ -1,18 +1,14 @@
 /* Global */
 
-@font-face {
-  font-family: "Playfair Display";
-  font-weight: 300;
-  src: url("PlayfairDisplay-Regular.ttf") format("truetype");
-}
-
 :root {
   --primary: #444;
   --secondary: #1467ac;
-  --helvetica: 'Helvetica', Arial, sans-serif;
-  --playfair: 'Playfair Display', Helvetica Neue, Helvetica, Arial, sans-serif;
+  --helvetica: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  --georgia: 'Georgia', 'Times New Roman', serif;
+  color-scheme: light dark;
 }
 
+/* Reset */
 *, * :before, * :after {
   margin: 0;
   padding: 0;
@@ -28,7 +24,7 @@ body {
   background-color: #fff;
   font-family: var(--helvetica);
   color: var(--primary);
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   line-height: 1.4;
   font-weight: 300;
   text-align: center;
@@ -43,8 +39,8 @@ a {
 
 h1, h2, h3, h4, h5 {
   margin-bottom: 15px;
-  font-family: var(--playfair);;
-  font-weight: 300;
+  font-family: var(--georgia);
+  font-weight: 400;
   line-height: 1.2;
   color: var(--primary);
 }
@@ -107,7 +103,7 @@ hr {
 
 .container {
   margin: 0 auto;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   width: 960px;
   text-align: left;
 
@@ -125,6 +121,11 @@ hr {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr auto;
+    gap: 20px;
+  }
+  img.fill {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -147,4 +148,69 @@ hr {
   .col-9 { grid-column: auto / span 9; }
   .col-10 { grid-column: auto / span 10; }
   .col-12 { grid-column: auto / span 12; }
+}
+
+/* Utilities */
+
+.btn {
+  display: inline-block;
+  border-radius: 50px;
+  background: #333;
+  padding: 15px 30px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none;
+  text-align: center;
+}
+
+.icons {
+  div {
+    text-align: center;
+    white-space: pre-line;
+
+    img {
+      display: inline-block;
+    }
+  }
+}
+
+/* Header */
+
+header {
+  nav {
+    ul {
+      float: right;
+      list-style: none;
+      margin-left: 0;
+
+      li {
+        display: inline-block;
+        padding-right: 10px;
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center !important;
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #222 !important;
+  }
+  h1, h2, h3, p, ul li, code {
+    color: #f1f1f1 !important;
+  }
+  a.btn {
+    background: #a6a6a6 !important;
+    color: #404040 !important;
+  }
 }

@@ -26,9 +26,13 @@
 
   <body>
 
-    <header class="container">
-      <a href="#"><img src="https://dummyimage.com/400x160/60bcde/ffffff&text=&nbsp;Logo&nbsp;" width="200" height="80" alt="Logo" /></a>
-      <nav class="primary">
+<!-- Header -->
+
+    <header class="container row">
+      <div class="col-3">
+        <a href="#"><img src="https://dummyimage.com/400x160/60bcde/ffffff&text=&nbsp;Logo&nbsp;" width="200" height="80" alt="Logo"></a>
+      </div>
+      <nav class="col-9">
         <ul>
           <li><a href="#">Nav item</a></li>
           <li><a href="#">Nav item</a></li>
@@ -37,25 +41,113 @@
       </nav>
     </header>
 
-    <section class="container">
+<!-- Content -->
+
+    <div class="container">
+      <p>Text copy goes here. Text may also include a <a href="#">link</a>.</p>
+
+<!-- Fluid image -->
+      <img src="https://dummyimage.com/1920x800/60bcde/ffffff&text=&nbsp;&nbsp;Content+Image&nbsp;&nbsp;" width="960" height="400" class="fill" alt="Content Image">
+
+<!-- Titles -->
       <h1>H1 headline</h1>
       <h2>H2 headline</h2>
       <h3>H3 headline</h3>
-      <hr>
-      <p>Text copy <strong>goes</strong> <em>here</em>. Text may also include a <a href="#">link</a>.</p>
 
-      <div class="row">
+<!-- Text -->
+      <p>More text copy goes here. It could be as long as you need it to be as there is plenty of room to let it flow!</p>
+
+<!-- List items -->
+      <ul>
+        <li>List item</li>
+      </ul>
+
+<!-- Button -->
+<a href="#" class="btn">Call to Action</a>
+
+<!-- Two-column section with left image -->
+      <section class="row">
         <div class="col-6">
-          Two-column text.
+          <img src="https://dummyimage.com/960x400/60bcde/ffffff&text=&nbsp;Content+Image&nbsp;" width="480" height="200" class="fill" alt="Content Image">
         </div>
         <div class="col-6">
-          Two-column text.
+          Text next to an image, in a two-colum section, split 50/50.
         </div>
-      </div>
-    </section>
+      </section>
 
+<!-- Two-column section with right image -->
+      <section class="row">
+        <div class="col-6">
+          Text next to an image, in a two-colum section, split 50/50.
+        </div>
+        <div class="col-6">
+          <img src="https://dummyimage.com/960x400/60bcde/ffffff&text=&nbsp;Content+Image&nbsp;" width="480" height="200" class="fill" alt="Content Image">
+        </div>
+      </section>
+
+<!-- Two-column section with images -->
+      <section class="row">
+        <div class="col-6">
+          <img src="https://dummyimage.com/960x400/60bcde/ffffff&text=&nbsp;Content+Image&nbsp;" width="480" height="200" class="fill" alt="Content Image">
+          Text under an image, part of a two-column section, split 50/50.
+        </div>
+        <div class="col-6">
+          <img src="https://dummyimage.com/960x400/60bcde/ffffff&text=&nbsp;Content+Image&nbsp;" width="480" height="200" class="fill" alt="Content Image">
+          Text under an image, part of a two-column section, split 50/50.
+        </div>
+      </section>
+
+<!-- Three-column section with images -->
+      <section class="row">
+        <div class="col-4">
+          <img src="https://dummyimage.com/640x300/60bcde/ffffff&text=Content+Image" width="320" height="150" class="fill" alt="Content Image">
+          Text under an image, part of a three-column section, split into thirds.
+        </div>
+        <div class="col-4">
+          <img src="https://dummyimage.com/640x300/60bcde/ffffff&text=Content+Image" width="320" height="150" class="fill" alt="Content Image">
+          Text under an image, part of a three-column section, split into thirds.
+        </div>
+        <div class="col-4">
+          <img src="https://dummyimage.com/640x300/60bcde/ffffff&text=Content+Image" width="320" height="150" class="fill" alt="Content Image">
+          Text under an image, part of a three-column section, split into thirds.
+        </div>
+      </section>
+
+<!-- Four-column icons section -->
+      <section class="row icons">
+        <div class="col-3">
+          <img src="https://dummyimage.com/240x240/60bcde/ffffff&text=Icon" width="120" height="120" alt="Icon">
+          Text with icons
+        </div>
+        <div class="col-3">
+          <img src="https://dummyimage.com/240x240/60bcde/ffffff&text=Icon" width="120" height="120" alt="Icon">
+          Text with icons
+        </div>
+        <div class="col-3">
+          <img src="https://dummyimage.com/240x240/60bcde/ffffff&text=Icon" width="120" height="120" alt="Icon">
+          Text with icons
+        </div>
+        <div class="col-3">
+          <img src="https://dummyimage.com/240x240/60bcde/ffffff&text=Icon" width="120" height="120" alt="Icon">
+          Text with icons
+        </div>
+      </section>
+
+<!-- Listings section -->
+      <section class="row">
+        <div class="col-4">
+          <img src="https://dummyimage.com/640x300/60bcde/ffffff&text=&nbsp;Content+Image&nbsp;" width="320" height="150" class="fill" alt="Content Image">
+        </div>
+        <div class="col-8">
+          Text in a listing section, with an image a third of its width on the left.
+        </div>
+      </section>
+
+    </div>
+
+<!-- Footer -->
     <footer class="container">
-      <p>&copy; 2023 Blocks Edit</p>
+      <a href="#">Nav item</a> | <a href="#">Nav item</a> | <a href="#">Nav item</a>
     </footer>
 
     <script type="application/ld+json">
