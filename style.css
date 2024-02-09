@@ -97,7 +97,7 @@ ul {
   margin-left: 25px;
   list-style: disc;
 
-  li {
+  & li {
     margin-bottom: 5px;
   }
 }
@@ -174,11 +174,11 @@ hr {
 }
 
 .icons {
-  div {
+  & div {
     text-align: center;
     white-space: pre-line;
 
-    img {
+    & img {
       display: inline-block;
     }
   }
@@ -197,18 +197,18 @@ img.fill {
 /* Header */
 
 header {
-  .logo {
+  & .logo {
     float: left;
 
     @media (max-width: 480px) {
       float: none;
     }
   }
-  p {
+  & p {
     margin-bottom: 0;
   }
-  nav {
-    ul {
+  & nav {
+    & ul {
       list-style: none;
       margin-bottom: 0;
       margin-left: 0;
@@ -218,7 +218,7 @@ header {
         text-align: left;
       }
 
-      li {
+      & li {
         display: inline-block;
         padding-right: 10px;
 
