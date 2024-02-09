@@ -4,24 +4,21 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starter page template</title>
     <meta name="apple-mobile-web-app-title" content="Starter">
-    <meta name="description" content="Standard layout components for designing and building landing pages.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="dark light">
+    <meta name="description" content="Standard layout components for designing and building web pages.">
     <meta name="author" content="Blocks Edit">
-    <meta property="og:site_name" content="Starter page template">
-    <meta property="og:title" content="Standard layout components for designing and building landing pages.">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="Standard layout components for designing and building landing pages.">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="https://blocksedit.com/starter-page-template/">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@BlocksEdit">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/favicon.ico">
     <link rel="apple-touch-icon" href="img/appicon.png">
-    <script src="js/functions.js"></script>
+<!-- Open Graph -->
+    <meta property="og:site_name" content="Starter">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://blocksedit.com/starter-page-template/">
+    <meta property="og:title" content="Starter page template">
+    <meta property="og:description" content="Standard layout components for designing and building web pages.">
+    <meta property="og:image" content="">
   </head>
 
   <body>
@@ -30,9 +27,12 @@
 
     <header class="container row">
       <div class="col-3">
-        <a href="#"><img src="https://dummyimage.com/400x160/60bcde/ffffff&text=&nbsp;Logo&nbsp;" width="200" height="80" alt="Logo"></a>
+        <a href="#"><img src="https://dummyimage.com/400x160/60bcde/ffffff&text=&nbsp;Logo&nbsp;" width="200" height="80" class="logo fill" alt="Logo"></a>
       </div>
-      <nav class="col-9">
+      <div class="col-4 vertical-align">
+        <p>Tagline description</p>
+      </div>
+      <nav class="col-5 vertical-align">
         <ul>
           <li><a href="#">Nav item</a></li>
           <li><a href="#">Nav item</a></li>
@@ -43,7 +43,7 @@
 
 <!-- Content -->
 
-    <div class="container">
+    <main class="container">
       <p>Text copy goes here. Text may also include a <a href="#">link</a>.</p>
 
 <!-- Fluid image -->
@@ -143,35 +143,12 @@
         </div>
       </section>
 
-    </div>
+    </main>
 
 <!-- Footer -->
     <footer class="container">
       <a href="#">Nav item</a> | <a href="#">Nav item</a> | <a href="#">Nav item</a>
     </footer>
-
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "Blog",
-        "url": "https://blocksedit.com/content-code/"
-      }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "Organization",
-        "name": "Blocks Edit",
-        "url": "https://blocksedit.com",
-        "sameAs": [
-          "https://www.linkedin.com/company/blocksedit/",
-          "https://www.youtube.com/channel/UCtMf6IzoF8KzA5coBtxx4jQ",
-          "https://www.facebook.com/blocksedit/",
-          "https://twitter.com/blocksedit",
-          "https://www.instagram.com/blocksedit/"
-        ]
-      }
-    </script>
 
   </body>
 </html>
