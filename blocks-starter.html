@@ -1,5 +1,3 @@
-<!-- Starter page template, established April, 2022 -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,7 +8,7 @@
     <meta name="apple-mobile-web-app-title" content="Starter">
     <meta name="description" content="Standard layout components for designing and building web pages.">
     <meta name="author" content="Blocks Edit">
-    <link rel="stylesheet" href="https://blocksedit.com/temp6723/starter/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="appicon.png">
 <!-- Open Graph -->
@@ -46,40 +44,40 @@
       <p class="block-edit">Text copy goes here. Text may also include a <a href="#">link</a>.</p>
 
 <!-- Fluid image -->
-      <div class="block-component" data-group="content-image">
+      <div class="block-component" data-group="content-image" data-title="Fluid image">
         <img src="https://fpoimg.com/1920x800?text=Content%20Image&bg_color=60bcde&text_color=ffffff" width="960" height="400" class="fill block-edit" data-block="content-image-image" alt="1920x800 - Content Image">
       </div>
 
 <!-- Titles -->
-      <div class="block-component" data-group="content-h1">
+      <div class="block-component" data-group="content-h1" data-title="Heading 1">
         <h1 class="block-edit" data-block="h1">H1 headline</h1>
       </div>
-      <div class="block-component" data-group="content-h2">
+      <div class="block-component" data-group="content-h2" data-title="Heading 2">
         <h2 class="block-edit" data-block="h2">H2 headline</h2>
       </div>
-      <div class="block-component" data-group="content-h3">
+      <div class="block-component" data-group="content-h3" data-title="Heading 3">
         <h3 class="block-edit" data-block="h3">H3 headline</h3>
       </div>
 
 <!-- Text -->
-      <div class="block-component" data-group="content-text">
+      <div class="block-component" data-group="content-text" data-title="Text">
         <p class="block-edit" data-block="text">More text copy goes here. It could be as long as you need it to be as there is plenty of room to let it flow!</p>
       </div>
 
 <!-- List items -->
-      <div class="block-component" data-group="content-list">
+      <div class="block-component" data-group="content-list" data-title="List items">
         <ul>
           <li class="block-edit" data-block="list-item">List item</li>
         </ul>
       </div>
 
 <!-- Button -->
-      <div class="block-component" data-group="content-button">
+      <div class="block-component" data-group="content-button" data-title="Button">
         <a href="#" class="btn block-edit" data-block="button">Call to Action</a>
       </div>
 
 <!-- Two-column section with left image -->
-      <section class="row block-section" data-group="two-column">
+      <section class="row block-section" data-group="two-column" data-title="Two-column with image"">
         <div class="col-6">
           <img src="https://fpoimg.com/960x400?text=Content%20Image&bg_color=60bcde&text_color=ffffff" width="480" height="200" class="fill block-edit" data-block="two-column-image" alt="960x400 - Content Image">
         </div>
@@ -99,7 +97,7 @@
       </section>
 
 <!-- Two-column section with images -->
-      <section class="row block-section" data-group="two-column-stacked">
+      <section class="row block-section" data-group="two-column-stacked" data-title="Two-column">
         <div class="col-6">
           <img src="https://fpoimg.com/960x400?text=Content%20Image&bg_color=60bcde&text_color=ffffff" width="480" height="200" class="fill block-edit" data-block="two-column-stacked-image-1" alt="960x400 - Content Image">
           <p class="block-edit" data-block="two-column-stacked-text-1">Text under an image, part of a two-column section, split 50/50.</p>
@@ -111,7 +109,7 @@
       </section>
 
 <!-- Three-column section with images -->
-      <section class="row block-section" data-group="three-column">
+      <section class="row block-section" data-group="three-column" data-title="Three-column">
         <div class="col-4">
           <img src="https://fpoimg.com/640x300?text=Content%20Image&bg_color=60bcde&text_color=ffffff" width="320" height="150" class="fill block-edit" data-block="three-column-image-1" alt="640x300 - Content Image">
           <p class="block-edit" data-block="three-column-text-1">Text under an image, part of a three-column section, split into thirds.</p>
@@ -127,7 +125,7 @@
       </section>
 
 <!-- Four-column icons section -->
-      <section class="row icons block-section" data-group="four-column">
+      <section class="row icons block-section" data-group="four-column" data-title="Four-column icons">
         <div class="col-3">
           <img src="https://fpoimg.com/240x240?text=Icon&bg_color=60bcde&text_color=ffffff" width="120" height="120" class="block-edit" data-block="four-column-image-1" alt="240x240 - Icon">
           <p class="block-edit" data-block="four-column-text-1">Text with icons</p>
@@ -147,7 +145,7 @@
       </section>
 
 <!-- Listings section -->
-      <section class="row block-section" data-group="listing">
+      <section class="row block-section" data-group="listing" data-title="Listings">
         <div class="col-4">
           <img src="https://fpoimg.com/640x300?text=Content%20Image&bg_color=60bcde&text_color=ffffff" width="320" height="150" class="fill block-edit" data-block="listing-image" alt="640x300 - Content Image">
         </div>
