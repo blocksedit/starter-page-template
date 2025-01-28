@@ -7,16 +7,6 @@
   --secondary: #0b72c7;
   --helvetica: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   --georgia: 'Georgia', 'Times New Roman', serif;
-  --15px: 0.938rem;
-  --20px: 1.25rem;
-  --22px: 1.375rem;
-  --24px: 1.5rem;
-  --28px: 1.75rem;
-  --30px: 1.875rem;
-  --32px: 2rem;
-  --40px: 2.5rem;
-  --52px: 3.25rem;
-  --60px: 3.75rem;
 }
 
 /* Reset */
@@ -35,7 +25,7 @@ body {
   background-color: #fff;
   font-family: var(--helvetica);
   color: var(--primary);
-  font-size: var(--20px);
+  font-size: 20px;
   line-height: 1.4;
   font-weight: 300;
   text-align: center;
@@ -48,10 +38,10 @@ body {
   }
 
   @media (min-width: 1100px) {
-    font-size: var(--22px);
+    font-size: 22px;
   }
   @media (min-width: 1200px) {
-    font-size: var(--24px);
+    font-size: 24px;
   }
 }
 
@@ -61,7 +51,7 @@ a {
 }
 
 h1, h2, h3, p, ul, ol {
-  margin-bottom: var(--15px);
+  margin-bottom: 15px;
 }
 h1, h2, h3 {
   font-family: var(--georgia);
@@ -74,27 +64,27 @@ h1, h2, h3 {
   }
 }
 h1 {
-  font-size: var(--60px);
+  font-size: 60px;
 
   @media (max-width: 800px) {
-    font-size: var(--52px);
+    font-size: 52px;
   }
   @media (max-width: 480px) {
-    font-size: var(--40px);
+    font-size: 40px;
   }
 }
 h2 {
-  font-size: var(--40px);
+  font-size: 40px;
 
   @media (max-width: 480px) {
-    font-size: var(--32px);
+    font-size: 32px;
   }
 }
 h3 {
-  font-size: var(--28px);
+  font-size: 28px;
 
   @media (max-width: 480px) {
-    font-size: var(--24px);
+    font-size: 24px;
   }
 }
 
@@ -121,7 +111,7 @@ ul {
 }
 
 hr {
-  margin: var(--30px) 0;
+  margin: 30px 0;
   border: 0;
   border-bottom: #ddd 1px solid;
   height: 0;

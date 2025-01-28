@@ -1,7 +1,7 @@
 # Starter Page Boilerplate
-### A skeleton HTML template of standard layout components for building web pages
+### A skeleton HTML template of standard layout components for building pages for the web
 
-A modularly designed boilerplate template that acts as a starting point for your own web pages, with focus on semantics and accessibility, and clean code that works across browsers. It includes essential layouts and components, with minimal styling for you to build on top of.
+A modern HTML and CSS boilerplate template that acts as a starting point for your own pages, with focus on semantics and accessibility, and clean code that works across browsers. With essential components, minimally styled for you to build on top of.
 
 **Optimized for accessibility**
 Semantic elements used for structure.
@@ -12,19 +12,13 @@ Stackable sections and standalone components following modular design practices.
 **Responsive adjustments**
 Simple CSS media query definitions to adjust layout for mobile across all modules.
 
-## Features ##
+### Features ###
 - Support for major browsers
 - Built semantically with accessibility in mind
 - Mobile-responsive ready
 - Dark mode compatibility
 - Essential pre-built components
 - Blocks Edit ready for drag and drop editing
-
-## Browsers tested ##
-- Google Chrome
-- Firefox
-- Apple Safari
-- Microsoft Edge
 
 ## Components included ##
 
@@ -154,16 +148,6 @@ Uses columns for layout.
       --secondary: #0b72c7;
       --helvetica: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
       --georgia: 'Georgia', 'Times New Roman', serif;
-      --15px: 0.938rem;
-      --20px: 1.25rem;
-      --22px: 1.375rem;
-      --24px: 1.5rem;
-      --28px: 1.75rem;
-      --30px: 1.875rem;
-      --32px: 2rem;
-      --40px: 2.5rem;
-      --52px: 3.25rem;
-      --60px: 3.75rem;
     }
     
     /* Reset */
