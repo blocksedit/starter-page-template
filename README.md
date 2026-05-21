@@ -20,21 +20,11 @@ Simple CSS media query definitions to adjust layout for mobile across all module
 - Essential pre-built components
 - Blocks Edit ready for drag and drop editing
 
-## Components included ##
+## Preview ##
 
-**Header**
-<img src="starter-page-header.png" />
+<img src="starter-page-components.jpg" />
 
-**Components**
-<img src="starter-page-components.png" />
-
-**Layouts**
-<img src="starter-page-layouts.png" />
-
-**Footer**
-<img src="starter-page-footer.png" />
-
-## The frame ##
+## Notes ##
 
 ### Doctype ###
 
@@ -53,36 +43,32 @@ Set language for browsers, and screen readers. If you need to set language direc
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <title>Starter Page Boilerplate</title>
-    <meta name="apple-mobile-web-app-title" content="Starter">
+    <title>Starter page template</title>
+    <meta name="apple-mobile-web-app-title" content="Page template">
+    <meta property="og:site_name" content="Blocks Edit">
+    <meta property="og:type" content="website">
     <meta name="description" content="Standard layout components for designing and building web pages.">
     <meta name="author" content="Blocks Edit">
+    <link rel="canonical" href="https://blocksedit.com/starter-page-template/">
+    <meta property="og:image" content="meta-preview.png">
 
-- Set the character encoding standard.
-- `viewport` element controls the page's dimensions and scaling. This is particularly important for mobile devices, to make sure content is not zoomed in or out.
-- `color-scheme` tells the browser dark mode settings. `light dark` means you support both. `light only` means you only support light styling.
-- `apple-mobile-web-app-title` allows setting an alternate, shorter title for your website, shown when website is added to the home screen of mobile devices.
-- `description` describes the current page, which is used in some search engine results.
-- `author` is completely optional, not used for anything functional.
+- Set the character encoding standard
+- `viewport` element controls the page's dimensions and scaling. This is particularly important for mobile devices, to make sure content is not zoomed in or out
+- `color-scheme` tells the browser dark mode settings. `light dark` means you support both. `light only` means you only support light styling
+- `apple-mobile-web-app-title` allows setting an alternate, shorter title for your website, shown when website is added to the home screen of mobile devices
+- `og:site_name` the name for your site, it could also be the name of a section on your site, like the blog
+- `og:type` use website for info pages, and article for blog posts, with more options available
+- `description` describes the current page, which is used in some search engine results
+- `canonical` full URL with no extra variables like campaign referrer info
+- `og:image` the preview thumbnail image
 
 ### External includes ###
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="appicon.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
 
 For an external stylesheet, an icon used in browser bookmarks and tabs, and an icon used for the home screen of mobile devices.
-
-### Open graph ###
-
-    <meta property="og:site_name" content="Blocks Edit">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://blocksedit.com/starter-page-template/">
-    <meta property="og:title" content="Starter page template">
-    <meta property="og:description" content="Standard layout components for designing and building web pages.">
-    <meta property="og:image" content="thumbnail-preview.png">
-
-Used for presenting a preview card for your page, usually for links in social media posts, or in messaging apps.
 
 ### Wrapper ###
 
@@ -94,11 +80,11 @@ Standard header, body, and footer elements that act as containers for content.
 
 ## Standalone components ##
 
-### Fluid image ###
+### Feature image ###
 
-    <img src="https://fpoimg.com/1920x800?text=Content%20Image&bg_color=60bcde&text_color=ffffff" width="960" height="400" class="fill" alt="1920x800 - Content Image">
+    <img src="feature-image-2000.png" srcset="feature-image-1200.png 1200w, feature-image-2000.png 2000w, feature-image-2400.png 2400w" width="960" height="400" class="fill" alt="Feature Image">
 
-Adjusts to column width.
+With responsive alternate image sizes using `srcset`.
 
 ### Titles ###
 

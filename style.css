@@ -172,7 +172,7 @@ hr {
 .btn {
   display: inline-block;
   border-radius: 50px;
-  background: #0b72c7;
+  background: var(--secondary);
   padding: 15px 30px;
   color: #fff;
   font-weight: 400;
